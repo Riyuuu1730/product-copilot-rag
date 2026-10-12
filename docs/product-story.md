@@ -49,14 +49,13 @@ I used Cursor AI as a development assistant. My focus was on framing the use cas
 
 ## What testing revealed
 
-In one exploratory run of 14 questions, manual review found several distinct failure patterns:
+The prototype exposed three important failure patterns:
 
-- **Grounding:** 2 of 8 questions initially labelled answerable received a full grounding pass; 5 were partial and 1 failed.
-- **Citations:** 4 of 7 answerable questions that received an answer had passing citation quality; placeholder citations and incomplete filenames remained problems.
-- **Refusal behaviour:** 4 of 6 questions initially labelled unanswerable were cleanly refused. One answerable metrics question was refused, and another unanswerable case gave a long answer before saying the information was not covered.
-- **Evaluation hygiene:** one expected-answerability label appears incorrect because the source corpus contains project-manager responsibilities.
+- **Citation reliability:** a citation was not always a dependable pointer to evidence for the answer.
+- **Grounding:** some answers were not fully supported by the retrieved material.
+- **Refusal behaviour:** the system sometimes refused incorrectly, showing that “knowing when not to answer” needs explicit testing too.
 
-These are small-sample, manually scored results, not a general model-accuracy benchmark. The current export does not record whether a run used 5 or 10 retrieved chunks, so it cannot support a comparison between those settings. See the [evaluation report](evaluation.md) and [scored question-level results](../evaluation/results-scored.csv).
+These are qualitative observations from prototype testing, not measured rates. The evaluation page describes how I would score the behaviour consistently and record reproducible results.
 
 ## What I would improve next
 
