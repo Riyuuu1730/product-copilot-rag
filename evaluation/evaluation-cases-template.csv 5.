@@ -1,1 +1,12 @@
+case_id,scenario_category,question,expected_behavior,expected_source_or_evidence,retrieval_setting,generated_answer,cited_source, relevance_score_0_to_2,grounding_score_0_to_2,citation_score_0_to_2,completeness_score_0_to_2,refusal_score_0_to_2,notes
+TC-001,answerable,,,,5,,,,,,,,
+TC-002,answerable,,,,10,,,,,,,,
+TC-003,answer_missing_from_documents,,,,5,,,,,,,,
+TC-004,answer_missing_from_documents,,,,10,,,,,,,,
+TC-005,ambiguous_question,,,,5,,,,,,,,
+TC-006,ambiguous_question,,,,10,,,,,,,,
+TC-007,citation_specific_question,,,,5,,,,,,,,
+TC-008,citation_specific_question,,,,10,,,,,,,,
+TC-009,answerable_with_distracting_context,,,,5,,,,,,,,
+TC-010,answerable_with_distracting_context,,,,10,,,,,,,,
 
