@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="330" viewBox="0 0 1100 330" role="img" aria-labelledby="title desc">
+  <title id="title">Product Copilot RAG workflow</title>
+  <desc id="desc">PDF documents are split into chunks and embedded in a vector store. A user's question is embedded, relevant chunks are retrieved, a local LLM generates an answer, and the answer is evaluated for relevance, grounding, citations, and refusal behaviour.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#61758a"/></marker>
+    <style>
+      .title{font:700 17px Arial,sans-serif;fill:#163047}.copy{font:13px Arial,sans-serif;fill:#42566a}.label{font:700 12px Arial,sans-serif;letter-spacing:.8px;fill:#52718d}.box{fill:#f4f8fb;stroke:#b8cad8;stroke-width:1.5}.focus{fill:#eaf4ff;stroke:#6a9bc9;stroke-width:1.8}.review{fill:#fff6e8;stroke:#d8b16f;stroke-width:1.5}.arrow{stroke:#61758a;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="1098" height="328" rx="18" fill="#ffffff" stroke="#e0e7ee"/>
+  <text x="28" y="32" class="label">DOCUMENT-GROUNDED ANSWERING</text>
+  <rect x="28" y="72" width="180" height="92" rx="12" class="box"/>
+  <text x="118" y="101" text-anchor="middle" class="title">PDF documents</text>
+  <text x="118" y="125" text-anchor="middle" class="copy">Extract text</text>
+  <text x="118" y="143" text-anchor="middle" class="copy">Split into chunks</text>
+  <path d="M208 118 H245" class="arrow"/>
+  <rect x="247" y="72" width="180" height="92" rx="12" class="box"/>
+  <text x="337" y="101" text-anchor="middle" class="title">Embed + index</text>
+  <text x="337" y="125" text-anchor="middle" class="copy">Sentence Transformers</text>
+  <text x="337" y="143" text-anchor="middle" class="copy">ChromaDB vector store</text>
+  <path d="M427 118 H464" class="arrow"/>
+  <rect x="466" y="72" width="180" height="92" rx="12" class="focus"/>
+  <text x="556" y="101" text-anchor="middle" class="title">Retrieve context</text>
+  <text x="556" y="125" text-anchor="middle" class="copy">Embed the question</text>
+  <text x="556" y="143" text-anchor="middle" class="copy">Return top-k chunks</text>
+  <path d="M646 118 H683" class="arrow"/>
+  <rect x="685" y="72" width="180" height="92" rx="12" class="focus"/>
+  <text x="775" y="101" text-anchor="middle" class="title">Generate answer</text>
+  <text x="775" y="125" text-anchor="middle" class="copy">Retrieved context + prompt</text>
+  <text x="775" y="143" text-anchor="middle" class="copy">Llama 3.2 via Ollama</text>
+  <path d="M865 118 H902" class="arrow"/>
+  <rect x="904" y="72" width="168" height="92" rx="12" class="review"/>
+  <text x="988" y="101" text-anchor="middle" class="title">Review output</text>
+  <text x="988" y="125" text-anchor="middle" class="copy">Relevance + grounding</text>
+  <text x="988" y="143" text-anchor="middle" class="copy">Citations + refusal</text>
+  <path d="M988 164 V218 H556 V174" class="arrow"/>
+  <text x="770" y="208" text-anchor="middle" class="copy">Use observed failures to guide the next experiment</text>
+  <text x="28" y="286" class="label">PRODUCT QUESTION</text>
+  <text x="28" y="308" class="copy">Does retrieving evidence improve answer quality—and can a user verify the result?</text>
+</svg>
