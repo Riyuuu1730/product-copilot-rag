@@ -1,1 +1,255 @@
+Product Copilot — Product Story
 
+
+
+A learning prototype for Product Management interview prep: ask questions about a focused collection of PDFs and explore whether retrieval makes AI answers more relevant, grounded, and traceable.
+
+The product at a glance
+
+
+
+
+
+
+
+
+
+
+
+Summary
+
+
+
+
+
+User
+
+
+
+Someone preparing for Product Management interviews with their own study documents
+
+
+
+
+
+Problem
+
+
+
+A general-purpose LLM may give a plausible answer without showing whether it is supported by the supplied material
+
+
+
+
+
+Product idea
+
+
+
+Retrieve relevant passages from a defined document collection before generating an answer
+
+
+
+
+
+What I wanted to learn
+
+
+
+How ingestion, embeddings, retrieval, generation, citations, and refusal behaviour fit together—and where the workflow breaks down
+
+
+
+
+
+Status
+
+
+
+Exploratory prototype, not a production-ready product
+
+
+
+The user journey
+
+
+
+
+
+
+
+Ask: the user asks a Product Management interview question.
+
+
+
+Retrieve: the system searches chunks created from the supplied PDFs.
+
+
+
+Generate: the retrieved context is passed to Llama 3.2 through Ollama to draft an answer.
+
+
+
+Inspect: the answer and its citations can be reviewed for relevance, grounding, and appropriate refusal when the documents do not support an answer.
+
+
+
+The product hypothesis
+
+Hypothesis: giving the model relevant passages from a defined document collection can make answers more grounded than relying on general model knowledge alone.
+
+The important caveat is that retrieval does not guarantee correctness. A retrieved passage may be incomplete or poorly matched, and the model may still overstate what the evidence says.
+
+Key product and experiment decisions
+
+
+
+
+
+
+
+Decision
+
+
+
+Why it mattered
+
+
+
+
+
+Use a focused collection of PDFs
+
+
+
+Defines the knowledge boundary for the interview-prep use case
+
+
+
+
+
+Build a retrieval-augmented generation (RAG) flow
+
+
+
+Makes document retrieval part of answer generation rather than relying only on the model's general knowledge
+
+
+
+
+
+Explore retrieving 5 versus 10 chunks
+
+
+
+Investigates how the amount of retrieved context may affect answer quality
+
+
+
+
+
+Review citations, grounding, and refusal behaviour
+
+
+
+Looks beyond “did it produce an answer?” to whether the answer is supported and appropriate
+
+
+
+
+
+Use a local LLM through Ollama
+
+
+
+Made it possible to experiment with Llama 3.2 in the prototype
+
+
+
+What I built
+
+
+
+
+
+Interface: Streamlit
+
+
+
+Pipeline: Python-based document ingestion, retrieval, answer generation, and evaluation workflow
+
+
+
+Vector store: ChromaDB
+
+
+
+Embeddings: Sentence Transformers
+
+
+
+Generation: Llama 3.2 through Ollama
+
+I used Cursor AI as a development assistant. My focus was on framing the use case, understanding the end-to-end workflow, making product and experiment decisions, testing the prototype, and interpreting its limitations.
+
+What testing revealed
+
+The prototype exposed three important failure patterns:
+
+
+
+
+
+Citation reliability: a citation was not always a dependable pointer to evidence for the answer.
+
+
+
+Grounding: some answers were not fully supported by the retrieved material.
+
+
+
+Refusal behaviour: the system sometimes refused incorrectly, showing that “knowing when not to answer” needs explicit testing too.
+
+These are qualitative observations from prototype testing, not measured rates. The evaluation page describes how I would score the behaviour consistently and record reproducible results.
+
+What I would improve next
+
+
+
+
+
+Make evidence easier to verify: ensure cited passages directly support the associated claims.
+
+
+
+Test answerable and unanswerable questions separately: distinguish a justified refusal from an unnecessary one.
+
+
+
+Compare retrieval settings systematically: score the same test questions with 5 and 10 retrieved chunks, then compare each evaluation dimension.
+
+
+
+Track failures by category: avoid relying on one average that could hide a weak area.
+
+
+
+Project materials
+
+
+
+
+
+Project presentation and demo link
+
+
+
+Evaluation approach and observed findings
+
+
+
+Evaluation case template
+
+
+
+Takeaway: this project was not just about making a chatbot answer questions. It was about exploring the product decisions behind a document-grounded AI workflow—and using failure cases to understand what would need to improve before anyone could rely on it.
