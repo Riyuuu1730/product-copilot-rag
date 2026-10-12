@@ -1,0 +1,87 @@
+question,expected_answerable,answer,refused,top_source
+What is TAM SAM SOM?,yes,"According to the provided excerpts, TAM, SAM, and SOM represent three subsets of a business's market:
+
+1. **TAM (Total Addressable Market)**: The portion of the market that may actually buy products or services or may purchase similar products or services from another business.
+2. **SAM (Serviceable Available Market)**: The portion of the market that is actually available to your business, considering factors such as competition, distribution capacity, and marketing reach. It represents your product or service's target group.
+3. **SOM (Serviceable Obtainable Market)**: The portion of the market that your business can realistically serve and is likely to serve, taking into account your resources and capabilities.
+
+These metrics are used to analyze the viability of a business model, help businesses create efficient sales and marketing campaigns, and assist investors in evaluating potential investment opportunities.",False,"TAM, SAM, SOM_ Understanding Market Size for Your Business - 2023 - MasterClass.pdf"
+What is Jobs to be Done?,yes,"According to the excerpts, ""Job to be Done"" refers to what an individual seeks to accomplish in a given circumstance, involving more than just a straightforward task. [source.pdf, p.5]
+
+To uncover jobs your customers need help with, you can ask yourself:
+
+1. Do you have a job that needs to be done?
+2. Where do you see noncon sump­ tion? [source.pdf, p.6]
+3. How do you make progress in a program or process?
+4. What anxieties or inertia might be holding you back? [source.pdf, p.5]
+5. In a data-obsessed world, it might be a surprise that some of the greatest innovators have succeeded with little more than intuition to guide their efforts.",False,Jobs to be done Christensen.pdf
+How do you write a user story?,yes,"According to [Writing user stories.pdf, p.3], a user story consists of a motivation, description, acceptance criteria, and test cases.
+
+The motivation is the most important part, which reflects the perspective of the product owner about why the story is needed, why it's needed now, and for whom it will deliver value.
+
+The description is the ""As a [who] Describes the 'who' is asking for the work to be done"" part, as stated in [Agile process.pdf, p.3]. It has three purposes: to provide a clue to the home organization of the initiator, to convey information to the reader about what needs to get done, and to decompose the story to the point where its estimated duration can fit within the time-box of an iteration.
+
+The acceptance criteria and test cases are not explicitly described in the provided excerpts, but [Writing user stories.pdf, p.6] mentions that they are needed to make the required decisions during the implementation period.",False,Agile process.pdf
+What metrics matter for a product?,yes,Not covered in the provided documents.,True,Metrics that matter.pdf
+"What is TAM, SAM, and SOM used for in fundraising?",yes,"According to the MasterClass document, TAM (Total Addressable Market), SAM (Serviceable Available Market), and SOM (Serviceable Obtainable Market) are used for:
+
+1. Fundraising: to analyze the viability of a business model, assess the potential upside and risks of an investment opportunity, and prioritize new products or services.
+2. Determining the revenue opportunity inherent in a product or service and determining how much effort and funding are needed to achieve that revenue.
+3. Creating efficient, effective sales and marketing campaigns by identifying the target group (SAM).
+4. Proving the viability of a business model.
+
+Here are the definitions:
+
+* TAM: The overall revenue opportunity that a product or service has if it achieves 100% market share.
+* SAM: The portion of the market that may actually buy your products or services or may purchase similar products or services from another business.
+* SOM: The portion of the SAM that you are confident you can actually acquire.
+
+[MasterClass.pdf, p.3]",False,"TAM, SAM, SOM_ Understanding Market Size for Your Business - 2023 - MasterClass.pdf"
+What is the CEO's personal phone number?,no,Not covered in the provided documents.,True,The_Product_Manager.pdf
+What was the company's stock price in 2019?,no,Not covered in the provided documents.,True,Rent the Runway.pdf
+What is the office WiFi password?,no,Not covered in the provided documents.,True,ABCs-ProductManagement.pdf
+Explain Customer journey for subscription model?,yes,"According to [Customer experience and Journeys.pdf, p.5], a customer journey for a subscription model is a detailed roadmap that describes the process from start to finish, taking into account the business impact of optimizing the journey. It involves researching customers' experiences, assessing performance, and gauging how it compares to the competition.
+
+The journey is typically broken down into various stages, such as acquisition, onboarding, usage, and retention. Each stage requires a specific sequence of initiatives to ensure a seamless and satisfying experience for the customer.
+
+Optimizing a single customer journey is tactical, while shifting organizational processes, culture, and mind-sets to a journey orientation is strategic and transformational. This requires a bottom-up effort, involving research, surveys, and operational data, as well as leadership commitment and accountability.
+
+The ultimate goal is to create a customer experience that delights, engages, and keeps customers coming back, which is critical to growth and can even gain a company ambassadors, while a subpar experience can lead to notoriety.",False,Customer experience and Journeys.pdf
+Explain about RAG technology?,no,Not covered in the provided documents.,True,Jobs to be done Christensen.pdf
+Explain about different sprint.,yes,"Based on the provided document excerpts, here are explanations of different sprints:
+
+1. **Sprint (Agile Scrum)**: A short, time-boxed cycle in Agile Scrum development, typically a few weeks long. During this cycle, the team commits to building the top-priority features from their backlog of user stories. [The_Product_Manager.pdf, p.15]
+2. **Scrum Sprint**: Similar to a standard sprint, but with a specific focus on scrum methodologies. In a scrum sprint, all product requirements are frozen during the cycle, and the team agrees on a set of tasks to be completed at the start of the cycle. [The_Product_Manager.pdf, p.15]
+3. **XP (Extreme Programming) Sprint**: A short product cycle, similar to a scrum sprint, but with an emphasis on automated tests and pair programming. [Beyond Agile – Continuous Development.pdf, p.3]
+4. **Productboard Sprint**: A sprint plan roadmap that showcases a tactical plan, providing more granular detail of what is being worked on and when, typically used by cross-functional product teams. [ABCs-ProductManagement.pdf, p.26]
+5. **Time-Boxed Cycle**: A fixed-duration cycle in Agile development, often a few weeks long, where the team commits to building specific features or tasks during that period. [The_Product_Manager.pdf, p.15]
+
+These sprints may differ in their specific focus, duration, and methodology, but all share the goal of delivering working software in short cycles.",False,ABCs-ProductManagement.pdf
+What is role of product owner in agile process?,yes,"According to [Product-Focus-Journal-Leading.pdf, p.7], the Product Owner's role in the agile process is to be responsible for the ""inbound"" activities of the product, meaning they provide input and guidance to the development team on the product requirements and vision.",False,Product-Focus-Journal-Leading.pdf
+Tell me about software enginneering roadmap or career path?,no,"Based on the provided excerpts, a typical software engineering roadmap or career path involves the following stages:
+
+1. **Understanding Market and User Needs**: Product managers need to understand market and user needs to translate them into product features (Writing User Stories, p.1).
+2. **Communicating Requirements**: Effective communication of requirements is crucial, and product managers need to know how to communicate their requirements effectively (Writing User Stories, p.1).
+3. **Working with User Stories**: Working with user stories is a powerful way to present, structure, and break down product requirements (Writing User Stories, p.1).
+4. **Roadmap Development**: The creation and management of the product roadmap is typically the purview of the product team, but input from various sources (internal and external stakeholders) is necessary (Pendo Whitepaper 2020, p.14).
+5. **Continuous Feedback and Updates**: Roadmaps should be continuously updated as priorities shift and new data becomes available (Pendo Whitepaper 2020, p.14).
+
+In terms of skills and knowledge required for software engineering, it appears that product managers and engineers need to have:
+
+* Strong communication and requirements definition skills
+* Understanding of user needs and market trends
+* Experience with agile methodologies and continuous delivery
+* Knowledge of software development best practices
+* Ability to work collaboratively with cross-functional teams
+
+Not covered in the provided documents.",True,Product-Focus-Journal-Leading.pdf
+Explain about project management role?,no,"According to the document excerpts, the Project Manager's role involves:
+
+* Developing a product development schedule, usually in the form of a project flow, Gantt chart, or simple spreadsheet listing detailed tasks and timelines [The_Product_Manager.pdf, p.8]
+* Managing negotiations between design and engineering to ensure design choices reflect appropriate trade-offs between time-to-market, ease-of-use, and implementation cost [The_Product_Manager.pdf, p.8]
+* Developing and monitoring product development budgets [The_Product_Manager.pdf, p.9]
+* Ensuring that interim product releases and product development stages are sequenced sensibly, and that functions have assigned the necessary manpower at the right time to complete tasks [The_Product_Manager.pdf, p.9]
+* Tracking progress against the schedule and riding herd on functions at risk of missing deadlines [The_Product_Manager.pdf, p.8]
+* Reporting on engineers' progress against plan, but not supervising them and being not held accountable for their performance [The_Product_Manager.pdf, p.9]
+
+The ultimate responsibility for the product schedule lies with senior management, who must determine who has responsibility for the product schedule and make decisions accordingly [The_Product_Manager.pdf, p.9].",False,The_Product_Manager.pdf
